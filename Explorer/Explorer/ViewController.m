@@ -45,7 +45,7 @@
     // Flounders @30.334061 -87.139992
     // Seville @30.409683 @-87.212842
 
-    NSArray * locations;
+    NSArray * locations = NULL;
  
 
     
