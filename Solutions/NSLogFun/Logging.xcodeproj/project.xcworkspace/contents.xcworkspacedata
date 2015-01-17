@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ExplorerAssignment.xcodeproj">
+      location = "self:Logging.xcodeproj">
    </FileRef>
 </Workspace>

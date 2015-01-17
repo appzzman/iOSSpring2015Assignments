@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4FBDCC711A3212B400B92A35 /* ExplorerAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplorerAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBDCC711A3212B400B92A35 /* Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBDCC751A3212B400B92A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FBDCC761A3212B400B92A35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4FBDCC781A3212B400B92A35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		4FBDCC7F1A3212B400B92A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FBDCC811A3212B400B92A35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4FBDCC841A3212B400B92A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4FBDCC8A1A3212B400B92A35 /* ExplorerAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplorerAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBDCC8A1A3212B400B92A35 /* ExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBDCC8F1A3212B400B92A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FBDCC901A3212B400B92A35 /* ExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExplorerTests.m; sourceTree = "<group>"; };
 		4FBDCC9A1A321D8A00B92A35 /* MapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDelegate.h; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 		4FBDCC721A3212B400B92A35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FBDCC711A3212B400B92A35 /* ExplorerAssignment.app */,
-				4FBDCC8A1A3212B400B92A35 /* ExplorerAssignmentTests.xctest */,
+				4FBDCC711A3212B400B92A35 /* Explorer.app */,
+				4FBDCC8A1A3212B400B92A35 /* ExplorerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4FBDCC701A3212B400B92A35 /* ExplorerAssignment */ = {
+		4FBDCC701A3212B400B92A35 /* Explorer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FBDCC941A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerAssignment" */;
+			buildConfigurationList = 4FBDCC941A3212B400B92A35 /* Build configuration list for PBXNativeTarget "Explorer" */;
 			buildPhases = (
 				4FBDCC6D1A3212B400B92A35 /* Sources */,
 				4FBDCC6E1A3212B400B92A35 /* Frameworks */,
@@ -139,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = ExplorerAssignment;
+			name = Explorer;
 			productName = Explorer;
-			productReference = 4FBDCC711A3212B400B92A35 /* ExplorerAssignment.app */;
+			productReference = 4FBDCC711A3212B400B92A35 /* Explorer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4FBDCC891A3212B400B92A35 /* ExplorerAssignmentTests */ = {
+		4FBDCC891A3212B400B92A35 /* ExplorerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FBDCC971A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerAssignmentTests" */;
+			buildConfigurationList = 4FBDCC971A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerTests" */;
 			buildPhases = (
 				4FBDCC861A3212B400B92A35 /* Sources */,
 				4FBDCC871A3212B400B92A35 /* Frameworks */,
@@ -157,9 +157,9 @@
 			dependencies = (
 				4FBDCC8C1A3212B400B92A35 /* PBXTargetDependency */,
 			);
-			name = ExplorerAssignmentTests;
+			name = ExplorerTests;
 			productName = ExplorerTests;
-			productReference = 4FBDCC8A1A3212B400B92A35 /* ExplorerAssignmentTests.xctest */;
+			productReference = 4FBDCC8A1A3212B400B92A35 /* ExplorerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4FBDCC6C1A3212B400B92A35 /* Build configuration list for PBXProject "ExplorerAssignment" */;
+			buildConfigurationList = 4FBDCC6C1A3212B400B92A35 /* Build configuration list for PBXProject "Explorer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,8 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FBDCC701A3212B400B92A35 /* ExplorerAssignment */,
-				4FBDCC891A3212B400B92A35 /* ExplorerAssignmentTests */,
+				4FBDCC701A3212B400B92A35 /* Explorer */,
+				4FBDCC891A3212B400B92A35 /* ExplorerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,7 +244,7 @@
 /* Begin PBXTargetDependency section */
 		4FBDCC8C1A3212B400B92A35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FBDCC701A3212B400B92A35 /* ExplorerAssignment */;
+			target = 4FBDCC701A3212B400B92A35 /* Explorer */;
 			targetProxy = 4FBDCC8B1A3212B400B92A35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -351,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Explorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = ExplorerAssignment;
+				PRODUCT_NAME = Explorer;
 			};
 			name = Debug;
 		};
@@ -361,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Explorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = ExplorerAssignment;
+				PRODUCT_NAME = Explorer;
 			};
 			name = Release;
 		};
@@ -379,7 +379,7 @@
 				);
 				INFOPLIST_FILE = ExplorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ExplorerAssignmentTests;
+				PRODUCT_NAME = ExplorerTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Explorer.app/Explorer";
 			};
 			name = Debug;
@@ -394,7 +394,7 @@
 				);
 				INFOPLIST_FILE = ExplorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ExplorerAssignmentTests;
+				PRODUCT_NAME = ExplorerTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Explorer.app/Explorer";
 			};
 			name = Release;
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4FBDCC6C1A3212B400B92A35 /* Build configuration list for PBXProject "ExplorerAssignment" */ = {
+		4FBDCC6C1A3212B400B92A35 /* Build configuration list for PBXProject "Explorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FBDCC921A3212B400B92A35 /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FBDCC941A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerAssignment" */ = {
+		4FBDCC941A3212B400B92A35 /* Build configuration list for PBXNativeTarget "Explorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FBDCC951A3212B400B92A35 /* Debug */,
@@ -420,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FBDCC971A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerAssignmentTests" */ = {
+		4FBDCC971A3212B400B92A35 /* Build configuration list for PBXNativeTarget "ExplorerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FBDCC981A3212B400B92A35 /* Debug */,
