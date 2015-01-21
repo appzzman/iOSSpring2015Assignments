@@ -4,7 +4,7 @@ Create a set of classes (Rectangle, Square, Circle, Triangle) that can be used f
 
 Keep in mind that classes will have to override the default initializer located in Shape method. Also create new constructors that will be passing values helpful in creating classes, for example constructor for Rectangle class will be different than constructor of Circle or triangle class. Create several objects, add it to the Array<Shape>, loop through it printing the values of area and perimiter and name of the class.
 
-You can use the Shape class below or use @protocol 
+You can use the Shape class below or use protocol 
 */
 
 class Shape{
