@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5tP-o2-Hwo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="Ym1-PW-iuv">
+            <objects>
+                <tableViewController id="GJc-Pq-4z5" customClass="VenuesListViewController" customModule="UWF" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JvJ-mw-c4F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="venueCell" textLabel="XL6-U0-q4H" style="IBUITableViewCellStyleDefault" id="JMc-qp-ufe">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JMc-qp-ufe" id="B8H-R6-llW">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XL6-U0-q4H">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Gm4-ZE-Wvd" kind="show" identifier="showDetails" id="tlV-2m-gBX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GJc-Pq-4z5" id="QfA-1l-bbI"/>
+                            <outlet property="delegate" destination="GJc-Pq-4z5" id="bw0-5q-41G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="QET-ca-kqB">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="kQd-b5-TM4">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="iEQ-fY-bLh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQp-fV-D7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3po-SR-4wJ">
+            <objects>
+                <navigationController id="5tP-o2-Hwo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wmb-ht-vWv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GJc-Pq-4z5" kind="relationship" relationship="rootViewController" id="Wqs-wP-0xm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61f-Zi-IdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-528" y="294"/>
+        </scene>
+        <!--Dining Venue View Controller-->
+        <scene sceneID="7lR-Ak-piu">
+            <objects>
+                <viewController storyboardIdentifier="DiningVenue" id="Gm4-ZE-Wvd" customClass="DiningVenueViewController" customModule="UWF" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VP0-jZ-fwH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPJ-7Y-SgB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckt-7I-fP2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Iz-DqP">
+                                <rect key="frame" x="182" y="78" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="32U-r6-rgZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="32U-r6-rgZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="32U-r6-rgZ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wix-ad-UEk">
+                                <rect key="frame" x="182" y="220" width="240" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2e-jg-ts9">
+                                <rect key="frame" x="279" y="49" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E2e-jg-ts9" firstAttribute="centerX" secondItem="pGz-Iz-DqP" secondAttribute="centerX" id="0L6-US-Mv8"/>
+                            <constraint firstItem="Wix-ad-UEk" firstAttribute="top" secondItem="pGz-Iz-DqP" secondAttribute="bottom" constant="14" id="9hR-AM-c6F"/>
+                            <constraint firstItem="pGz-Iz-DqP" firstAttribute="trailing" secondItem="Wix-ad-UEk" secondAttribute="trailing" id="Dvk-p7-lKk"/>
+                            <constraint firstItem="pGz-Iz-DqP" firstAttribute="top" secondItem="E2e-jg-ts9" secondAttribute="bottom" constant="8" symbolic="YES" id="Eba-0o-nGD">
+                                <variation key="widthClass=compact" constant="18"/>
+                            </constraint>
+                            <constraint firstItem="E2e-jg-ts9" firstAttribute="centerX" secondItem="ckt-7I-fP2" secondAttribute="centerX" id="Ozw-RD-aST"/>
+                            <constraint firstItem="sPJ-7Y-SgB" firstAttribute="top" secondItem="Wix-ad-UEk" secondAttribute="bottom" constant="192" id="Qd8-16-We5">
+                                <variation key="widthClass=compact" constant="144"/>
+                            </constraint>
+                            <constraint firstItem="Wix-ad-UEk" firstAttribute="leading" secondItem="pGz-Iz-DqP" secondAttribute="leading" id="hCE-Sa-d5F"/>
+                            <constraint firstItem="pGz-Iz-DqP" firstAttribute="leading" secondItem="ckt-7I-fP2" secondAttribute="leadingMargin" constant="64" id="j8X-lS-uWc"/>
+                            <constraint firstItem="E2e-jg-ts9" firstAttribute="top" secondItem="VP0-jZ-fwH" secondAttribute="bottom" constant="25" id="wFB-VK-R41">
+                                <variation key="widthClass=compact" constant="19"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dvk-p7-lKk"/>
+                                <exclude reference="Eba-0o-nGD"/>
+                                <exclude reference="j8X-lS-uWc"/>
+                                <exclude reference="0L6-US-Mv8"/>
+                                <exclude reference="Ozw-RD-aST"/>
+                                <exclude reference="wFB-VK-R41"/>
+                                <exclude reference="9hR-AM-c6F"/>
+                                <exclude reference="hCE-Sa-d5F"/>
+                                <exclude reference="Qd8-16-We5"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Dvk-p7-lKk"/>
+                                <include reference="Eba-0o-nGD"/>
+                                <include reference="j8X-lS-uWc"/>
+                                <include reference="0L6-US-Mv8"/>
+                                <include reference="Ozw-RD-aST"/>
+                                <include reference="wFB-VK-R41"/>
+                                <include reference="9hR-AM-c6F"/>
+                                <include reference="hCE-Sa-d5F"/>
+                                <include reference="Qd8-16-We5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="venueDescription" destination="Wix-ad-UEk" id="e3J-tn-nbq"/>
+                        <outlet property="venueImage" destination="pGz-Iz-DqP" id="cf9-Za-bsq"/>
+                        <outlet property="venueName" destination="E2e-jg-ts9" id="YG9-ar-idb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQg-Ri-ni0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129.5" y="800"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Application" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-zK-edN">
+                                <rect key="frame" x="232" y="87" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-rx-54i">
+                                <rect key="frame" x="166" y="136" width="269" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="W18-dT-TJB"/>
+                                    <constraint firstAttribute="height" constant="128" id="qCu-2E-zVL"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e2r-rx-54i" firstAttribute="top" secondItem="g3y-zK-edN" secondAttribute="bottom" constant="28" id="C4a-cV-uOr"/>
+                            <constraint firstItem="e2r-rx-54i" firstAttribute="centerX" secondItem="g3y-zK-edN" secondAttribute="centerX" id="NZB-9f-AFj"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="e2r-rx-54i" secondAttribute="bottom" constant="336" id="aA0-Ls-Rwc"/>
+                            <constraint firstItem="e2r-rx-54i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="bSL-A7-4wx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129.5" y="131"/>
+        </scene>
+    </scenes>
+</document>
