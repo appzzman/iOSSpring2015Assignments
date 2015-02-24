@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UWFMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-fv-SO0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EvF-fv-SO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HUe-0Z-VrT"/>
+                            <constraint firstAttribute="trailing" secondItem="EvF-fv-SO0" secondAttribute="trailing" id="I2C-I2-q9j"/>
+                            <constraint firstItem="EvF-fv-SO0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PXf-S1-zF5"/>
+                            <constraint firstItem="EvF-fv-SO0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="VWl-zu-Ynm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="EvF-fv-SO0" id="icz-EV-23g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="-127"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="EMd-Lt-6r4">
+            <objects>
+                <viewController id="Lc9-Yo-bFI" customClass="MapViewController" customModule="UWFMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hv5-iw-4ie"/>
+                        <viewControllerLayoutGuide type="bottom" id="mep-ic-Jjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PfH-zg-92c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warsaw1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-tr-H91">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warsaw2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQs-nL-xaj">
+                                <rect key="frame" x="0.0" y="240" width="600" height="240"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDJ-Yh-2Uh">
+                                <rect key="frame" x="0.0" y="480" width="600" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KQs-nL-xaj" firstAttribute="leading" secondItem="TAP-tr-H91" secondAttribute="leading" id="15h-Ei-l3d"/>
+                            <constraint firstItem="KQs-nL-xaj" firstAttribute="height" secondItem="TAP-tr-H91" secondAttribute="height" id="18z-Wi-bay"/>
+                            <constraint firstItem="TAP-tr-H91" firstAttribute="width" secondItem="HDJ-Yh-2Uh" secondAttribute="width" id="5zN-t2-PyW"/>
+                            <constraint firstItem="TAP-tr-H91" firstAttribute="height" secondItem="PfH-zg-92c" secondAttribute="height" multiplier="0.4" id="61n-ll-Ol0"/>
+                            <constraint firstItem="TAP-tr-H91" firstAttribute="top" secondItem="hv5-iw-4ie" secondAttribute="bottom" constant="-20" id="BDX-3w-bl8"/>
+                            <constraint firstItem="TAP-tr-H91" firstAttribute="leading" secondItem="HDJ-Yh-2Uh" secondAttribute="leading" id="Gtl-hA-YLf"/>
+                            <constraint firstAttribute="width" secondItem="TAP-tr-H91" secondAttribute="width" id="QVU-rD-NPk"/>
+                            <constraint firstAttribute="centerX" secondItem="TAP-tr-H91" secondAttribute="centerX" id="Qh1-Pe-ZzX"/>
+                            <constraint firstItem="KQs-nL-xaj" firstAttribute="width" secondItem="TAP-tr-H91" secondAttribute="width" id="W98-mf-tOd"/>
+                            <constraint firstItem="KQs-nL-xaj" firstAttribute="bottom" secondItem="HDJ-Yh-2Uh" secondAttribute="top" id="tL1-bd-Dwy"/>
+                            <constraint firstItem="KQs-nL-xaj" firstAttribute="top" secondItem="TAP-tr-H91" secondAttribute="bottom" id="yrI-1y-zNK"/>
+                            <constraint firstItem="TAP-tr-H91" firstAttribute="height" secondItem="HDJ-Yh-2Uh" secondAttribute="height" multiplier="2" id="zH7-Nx-ieI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="KQs-nL-xaj" id="vvQ-CB-ENm"/>
+                        <outlet property="descriptionTextView" destination="HDJ-Yh-2Uh" id="g0y-1f-uYr"/>
+                        <outlet property="topImage" destination="TAP-tr-H91" id="Dmh-gz-b8H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufq-Uw-cNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568.5" y="-122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="warsaw1.jpg" width="1200" height="761"/>
+        <image name="warsaw2.jpg" width="800" height="572"/>
+    </resources>
+</document>

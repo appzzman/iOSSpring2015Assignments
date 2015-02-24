@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Proximity" representedClassName="Proximity" syncable="YES">
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Proximity" positionX="-45" positionY="0" width="128" height="60"/>
+    </elements>
+</model>

@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4073611D1A9BD85F00700E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4073611C1A9BD85F00700E6B /* AppDelegate.swift */; };
+		407361201A9BD85F00700E6B /* UWFMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4073611E1A9BD85F00700E6B /* UWFMap.xcdatamodeld */; };
+		407361221A9BD85F00700E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361211A9BD85F00700E6B /* ViewController.swift */; };
+		407361251A9BD85F00700E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407361231A9BD85F00700E6B /* Main.storyboard */; };
+		407361271A9BD85F00700E6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407361261A9BD85F00700E6B /* Images.xcassets */; };
+		4073612A1A9BD85F00700E6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407361281A9BD85F00700E6B /* LaunchScreen.xib */; };
+		407361361A9BD85F00700E6B /* UWFMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361351A9BD85F00700E6B /* UWFMapTests.swift */; };
+		407361401A9BD89500700E6B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4073613F1A9BD89500700E6B /* MapKit.framework */; };
+		407361421A9BE5F500700E6B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361411A9BE5F500700E6B /* MapViewController.swift */; };
+		407361461A9BE89F00700E6B /* warsaw1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407361441A9BE89F00700E6B /* warsaw1.jpg */; };
+		407361471A9BE89F00700E6B /* warsaw2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407361451A9BE89F00700E6B /* warsaw2.jpg */; };
+		407361491A9BE92900700E6B /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361481A9BE92900700E6B /* LocationsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		407361301A9BD85F00700E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4073610F1A9BD85F00700E6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407361161A9BD85F00700E6B;
+			remoteInfo = UWFMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		407361171A9BD85F00700E6B /* UWFMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWFMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4073611B1A9BD85F00700E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4073611C1A9BD85F00700E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4073611F1A9BD85F00700E6B /* UWFMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWFMap.xcdatamodel; sourceTree = "<group>"; };
+		407361211A9BD85F00700E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		407361241A9BD85F00700E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		407361261A9BD85F00700E6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		407361291A9BD85F00700E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4073612F1A9BD85F00700E6B /* UWFMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWFMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		407361341A9BD85F00700E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407361351A9BD85F00700E6B /* UWFMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWFMapTests.swift; sourceTree = "<group>"; };
+		4073613F1A9BD89500700E6B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		407361411A9BE5F500700E6B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		407361441A9BE89F00700E6B /* warsaw1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw1.jpg; sourceTree = "<group>"; };
+		407361451A9BE89F00700E6B /* warsaw2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw2.jpg; sourceTree = "<group>"; };
+		407361481A9BE92900700E6B /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		407361141A9BD85F00700E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407361401A9BD89500700E6B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4073612C1A9BD85F00700E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4073610E1A9BD85F00700E6B = {
+			isa = PBXGroup;
+			children = (
+				4073613F1A9BD89500700E6B /* MapKit.framework */,
+				407361191A9BD85F00700E6B /* UWFMap */,
+				407361321A9BD85F00700E6B /* UWFMapTests */,
+				407361181A9BD85F00700E6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		407361181A9BD85F00700E6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407361171A9BD85F00700E6B /* UWFMap.app */,
+				4073612F1A9BD85F00700E6B /* UWFMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		407361191A9BD85F00700E6B /* UWFMap */ = {
+			isa = PBXGroup;
+			children = (
+				407361431A9BE89300700E6B /* Images */,
+				4073611C1A9BD85F00700E6B /* AppDelegate.swift */,
+				407361211A9BD85F00700E6B /* ViewController.swift */,
+				407361231A9BD85F00700E6B /* Main.storyboard */,
+				407361411A9BE5F500700E6B /* MapViewController.swift */,
+				407361261A9BD85F00700E6B /* Images.xcassets */,
+				407361281A9BD85F00700E6B /* LaunchScreen.xib */,
+				4073611E1A9BD85F00700E6B /* UWFMap.xcdatamodeld */,
+				4073611A1A9BD85F00700E6B /* Supporting Files */,
+			);
+			path = UWFMap;
+			sourceTree = "<group>";
+		};
+		4073611A1A9BD85F00700E6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4073611B1A9BD85F00700E6B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		407361321A9BD85F00700E6B /* UWFMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				407361351A9BD85F00700E6B /* UWFMapTests.swift */,
+				407361331A9BD85F00700E6B /* Supporting Files */,
+			);
+			path = UWFMapTests;
+			sourceTree = "<group>";
+		};
+		407361331A9BD85F00700E6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				407361341A9BD85F00700E6B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		407361431A9BE89300700E6B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				407361441A9BE89F00700E6B /* warsaw1.jpg */,
+				407361451A9BE89F00700E6B /* warsaw2.jpg */,
+				407361481A9BE92900700E6B /* LocationsModel.swift */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		407361161A9BD85F00700E6B /* UWFMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMap" */;
+			buildPhases = (
+				407361131A9BD85F00700E6B /* Sources */,
+				407361141A9BD85F00700E6B /* Frameworks */,
+				407361151A9BD85F00700E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UWFMap;
+			productName = UWFMap;
+			productReference = 407361171A9BD85F00700E6B /* UWFMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4073612E1A9BD85F00700E6B /* UWFMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4073613C1A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMapTests" */;
+			buildPhases = (
+				4073612B1A9BD85F00700E6B /* Sources */,
+				4073612C1A9BD85F00700E6B /* Frameworks */,
+				4073612D1A9BD85F00700E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				407361311A9BD85F00700E6B /* PBXTargetDependency */,
+			);
+			name = UWFMapTests;
+			productName = UWFMapTests;
+			productReference = 4073612F1A9BD85F00700E6B /* UWFMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4073610F1A9BD85F00700E6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Janusz Chudzynski";
+				TargetAttributes = {
+					407361161A9BD85F00700E6B = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4073612E1A9BD85F00700E6B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 407361161A9BD85F00700E6B;
+					};
+				};
+			};
+			buildConfigurationList = 407361121A9BD85F00700E6B /* Build configuration list for PBXProject "UWFMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4073610E1A9BD85F00700E6B;
+			productRefGroup = 407361181A9BD85F00700E6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407361161A9BD85F00700E6B /* UWFMap */,
+				4073612E1A9BD85F00700E6B /* UWFMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		407361151A9BD85F00700E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407361461A9BE89F00700E6B /* warsaw1.jpg in Resources */,
+				407361471A9BE89F00700E6B /* warsaw2.jpg in Resources */,
+				407361251A9BD85F00700E6B /* Main.storyboard in Resources */,
+				4073612A1A9BD85F00700E6B /* LaunchScreen.xib in Resources */,
+				407361271A9BD85F00700E6B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4073612D1A9BD85F00700E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		407361131A9BD85F00700E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407361491A9BE92900700E6B /* LocationsModel.swift in Sources */,
+				407361221A9BD85F00700E6B /* ViewController.swift in Sources */,
+				4073611D1A9BD85F00700E6B /* AppDelegate.swift in Sources */,
+				407361201A9BD85F00700E6B /* UWFMap.xcdatamodeld in Sources */,
+				407361421A9BE5F500700E6B /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4073612B1A9BD85F00700E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407361361A9BD85F00700E6B /* UWFMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		407361311A9BD85F00700E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 407361161A9BD85F00700E6B /* UWFMap */;
+			targetProxy = 407361301A9BD85F00700E6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		407361231A9BD85F00700E6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407361241A9BD85F00700E6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		407361281A9BD85F00700E6B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407361291A9BD85F00700E6B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		407361371A9BD85F00700E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		407361381A9BD85F00700E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4073613A1A9BD85F00700E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UWFMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4073613B1A9BD85F00700E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UWFMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4073613D1A9BD85F00700E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UWFMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UWFMap.app/UWFMap";
+			};
+			name = Debug;
+		};
+		4073613E1A9BD85F00700E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UWFMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UWFMap.app/UWFMap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		407361121A9BD85F00700E6B /* Build configuration list for PBXProject "UWFMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407361371A9BD85F00700E6B /* Debug */,
+				407361381A9BD85F00700E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4073613A1A9BD85F00700E6B /* Debug */,
+				4073613B1A9BD85F00700E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4073613C1A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4073613D1A9BD85F00700E6B /* Debug */,
+				4073613E1A9BD85F00700E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4073611E1A9BD85F00700E6B /* UWFMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4073611F1A9BD85F00700E6B /* UWFMap.xcdatamodel */,
+			);
+			currentVersion = 4073611F1A9BD85F00700E6B /* UWFMap.xcdatamodel */;
+			path = UWFMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4073610F1A9BD85F00700E6B /* Project object */;
+}
