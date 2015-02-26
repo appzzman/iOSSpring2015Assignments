@@ -6,18 +6,13 @@
 //  Copyright (c) 2015 Janusz Chudzynski. All rights reserved.
 //
 
-
-
 import UIKit
-// Add import statements for frameworks
+//TODO: Add import statements for frameworks
 import MapKit
 import CoreLocation
-
-
 //TODO: Add declaration that indicates that this class is MKMapViewDelegate conformant
-class ViewController: UIViewController{
-
-    //TODO: connect an iBOutlet 
+class ViewController: UIViewController, MKMapViewDelegate {
+//TODO: add an iBOutlet for the mapview ( connect it with Storyboard)
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -29,40 +24,21 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         self.segmentedControl.selectedSegmentIndex = UISegmentedControlNoSegment
         
-        //TODO: set the delegate of the map view here
+//TODO: set the delegate of the map view here
+        self.mapView.delegate = self
 
-        //TODO: enable showing user's location
+//TODO: enable showing user's location
         self.mapView.showsUserLocation = true
-
-        //TODO:request authorization YOU MUST ALSO Make changes to Info.plist file!
         self.locationManager.requestWhenInUseAuthorization()
 
         
+        
     }
-    
-    
-    
-
-    
-    
-//TODO: Finish implementation of method that will show user's current location
-   @IBAction func showCurrentLocation(){
-    var cl2d = CLLocationCoordinate2D(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude)
-    var span = MKCoordinateSpan(latitudeDelta: 0.0007872, longitudeDelta: 0.0109863)
-
-    //TODO:create a instance of the region
-    var newRegion:MKCoordinateRegion// MKCoordinateRegion = MKCoordinateRegion(center: cl2d, span: span)
-    
-    //TODO: change the displayed region of the map
-    
-    }
-    
-    
     
     @IBAction func segmentedControlChanged(sender: AnyObject) {
-        var index =  sender.selectedSegmentIndex
+      var index =  sender.selectedSegmentIndex
         if(index<self.locationsModel.locations.count){
-            self.addAnnotation(self.locationsModel.locations[index])
+             self.addAnnotation(self.locationsModel.locations[index])
         }
         else{
             let alert = UIAlertView()
@@ -72,42 +48,43 @@ class ViewController: UIViewController{
             alert.show()
             
         }
+
     }
     
     
+
     func addAnnotation(location:Location){
-        
-       //TODO:Create a MKPointAnnotation
+     
         var annotation: MKPointAnnotation = MKPointAnnotation()
-
-        //TODO: and set it's coordinate using coordinate property 
-
+        annotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude , longitude: location.longitude)
         
         self.zoomOnLocation(annotation.coordinate)
         annotation.title = location.title
-
-        //TODO: Add annotation to the map
-
+        self.mapView.addAnnotation(annotation)
     }
     
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
-    
+
     func zoomOnLocation(location:CLLocationCoordinate2D){
         var span = MKCoordinateSpan(latitudeDelta: 10.907872, longitudeDelta: 10.9109863)
         var newRegion: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
-        self.mapView.setRegion(newRegion, animated: true)
+         self.mapView.setRegion(newRegion, animated: true)
     }
-
     
     
+//TODO: Finish implementation of method that will show user's current location
+   @IBAction func showCurrentLocation(){
+    var cl2d = CLLocationCoordinate2D(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude)
 
+    var span = MKCoordinateSpan(latitudeDelta: 0.0007872, longitudeDelta: 0.0109863)
+    var newRegion: MKCoordinateRegion = MKCoordinateRegion(center: cl2d, span: span)
+    self.mapView.setRegion(newRegion, animated: true)
+    
+    }
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView!{
         if annotation is MKUserLocation {
@@ -133,7 +110,9 @@ class ViewController: UIViewController{
     }
     
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        }
+    
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
         
         var filteredArray = self.locationsModel.locations.filter( { (location: Location) -> Bool in
