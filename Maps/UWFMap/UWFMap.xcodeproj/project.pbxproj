@@ -16,9 +16,9 @@
 		407361361A9BD85F00700E6B /* UWFMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361351A9BD85F00700E6B /* UWFMapTests.swift */; };
 		407361401A9BD89500700E6B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4073613F1A9BD89500700E6B /* MapKit.framework */; };
 		407361421A9BE5F500700E6B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361411A9BE5F500700E6B /* MapViewController.swift */; };
-		407361461A9BE89F00700E6B /* warsaw1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407361441A9BE89F00700E6B /* warsaw1.jpg */; };
-		407361471A9BE89F00700E6B /* warsaw2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 407361451A9BE89F00700E6B /* warsaw2.jpg */; };
 		407361491A9BE92900700E6B /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407361481A9BE92900700E6B /* LocationsModel.swift */; };
+		4073614C1A9E9A8500700E6B /* warsaw1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4073614A1A9E9A8500700E6B /* warsaw1.jpg */; };
+		4073614D1A9E9A8500700E6B /* warsaw2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4073614B1A9E9A8500700E6B /* warsaw2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 		407361351A9BD85F00700E6B /* UWFMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWFMapTests.swift; sourceTree = "<group>"; };
 		4073613F1A9BD89500700E6B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		407361411A9BE5F500700E6B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		407361441A9BE89F00700E6B /* warsaw1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw1.jpg; sourceTree = "<group>"; };
-		407361451A9BE89F00700E6B /* warsaw2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw2.jpg; sourceTree = "<group>"; };
 		407361481A9BE92900700E6B /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		4073614A1A9E9A8500700E6B /* warsaw1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw1.jpg; sourceTree = "<group>"; };
+		4073614B1A9E9A8500700E6B /* warsaw2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warsaw2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +132,8 @@
 		407361431A9BE89300700E6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				407361441A9BE89F00700E6B /* warsaw1.jpg */,
-				407361451A9BE89F00700E6B /* warsaw2.jpg */,
+				4073614A1A9E9A8500700E6B /* warsaw1.jpg */,
+				4073614B1A9E9A8500700E6B /* warsaw2.jpg */,
 				407361481A9BE92900700E6B /* LocationsModel.swift */,
 			);
 			name = Images;
@@ -224,8 +224,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407361461A9BE89F00700E6B /* warsaw1.jpg in Resources */,
-				407361471A9BE89F00700E6B /* warsaw2.jpg in Resources */,
+				4073614C1A9E9A8500700E6B /* warsaw1.jpg in Resources */,
+				4073614D1A9E9A8500700E6B /* warsaw2.jpg in Resources */,
 				407361251A9BD85F00700E6B /* Main.storyboard in Resources */,
 				4073612A1A9BD85F00700E6B /* LaunchScreen.xib in Resources */,
 				407361271A9BD85F00700E6B /* Images.xcassets in Resources */,
@@ -444,6 +444,7 @@
 				4073613B1A9BD85F00700E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4073613C1A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMapTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				4073613E1A9BD85F00700E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

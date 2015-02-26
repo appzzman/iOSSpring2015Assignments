@@ -19,15 +19,65 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-fv-SO0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oNH-Ij-drP"/>
+                                </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dB-9M-MrD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCurrentLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="gR2-pq-3gY"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jio-ex-Wq3">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="San Juan"/>
+                                    <segment title="Warsaw"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9kU-2D-pWP"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7dB-9M-MrD" secondAttribute="bottom" constant="14" id="0gg-e9-RHq"/>
+                            <constraint firstItem="jio-ex-Wq3" firstAttribute="centerX" secondItem="7dB-9M-MrD" secondAttribute="centerX" id="7US-Ig-kJx"/>
+                            <constraint firstItem="jio-ex-Wq3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="CpE-Kx-lBe"/>
                             <constraint firstItem="EvF-fv-SO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HUe-0Z-VrT"/>
                             <constraint firstAttribute="trailing" secondItem="EvF-fv-SO0" secondAttribute="trailing" id="I2C-I2-q9j"/>
                             <constraint firstItem="EvF-fv-SO0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PXf-S1-zF5"/>
                             <constraint firstItem="EvF-fv-SO0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="VWl-zu-Ynm"/>
+                            <constraint firstItem="jio-ex-Wq3" firstAttribute="centerX" secondItem="EvF-fv-SO0" secondAttribute="centerX" id="a8d-TF-OC8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7dB-9M-MrD"/>
+                                <exclude reference="jio-ex-Wq3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7US-Ig-kJx"/>
+                                <exclude reference="CpE-Kx-lBe"/>
+                                <exclude reference="a8d-TF-OC8"/>
+                                <exclude reference="0gg-e9-RHq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7dB-9M-MrD"/>
+                                <include reference="jio-ex-Wq3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7US-Ig-kJx"/>
+                                <include reference="CpE-Kx-lBe"/>
+                                <include reference="a8d-TF-OC8"/>
+                                <include reference="0gg-e9-RHq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="EvF-fv-SO0" id="icz-EV-23g"/>
@@ -35,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72" y="-127"/>
+            <point key="canvasLocation" x="109.5" y="-153"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="EMd-Lt-6r4">
@@ -92,6 +142,6 @@
     </scenes>
     <resources>
         <image name="warsaw1.jpg" width="1200" height="761"/>
-        <image name="warsaw2.jpg" width="800" height="572"/>
+        <image name="warsaw2.jpg" width="800" height="512"/>
     </resources>
 </document>
