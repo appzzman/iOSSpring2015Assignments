@@ -7,7 +7,7 @@ import UIKit
 
 //Create a simple collection that stores several prime numbers
 
-//Create a sample dictionary that will store keys iOS,  Android, WIndows Phone and values
+//Create a sample dictionary that will store keys iOS, Android, WIndows Phone and values Objective-C, Java, C#
 
 //remove value for key iOS
 

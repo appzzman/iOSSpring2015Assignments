@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="muG-KX-yj8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="muG-KX-yj8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -74,10 +74,10 @@
                                 <exclude reference="jio-ex-Wq3"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0gg-e9-RHq"/>
                                 <exclude reference="7US-Ig-kJx"/>
                                 <exclude reference="CpE-Kx-lBe"/>
                                 <exclude reference="a8d-TF-OC8"/>
-                                <exclude reference="0gg-e9-RHq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -86,10 +86,10 @@
                                 <include reference="jio-ex-Wq3"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="0gg-e9-RHq"/>
                                 <include reference="7US-Ig-kJx"/>
                                 <include reference="CpE-Kx-lBe"/>
                                 <include reference="a8d-TF-OC8"/>
-                                <include reference="0gg-e9-RHq"/>
                             </mask>
                         </variation>
                     </view>
@@ -116,13 +116,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warsaw1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-tr-H91">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="warsaw1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-tr-H91">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warsaw2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQs-nL-xaj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="warsaw2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQs-nL-xaj">
                                 <rect key="frame" x="0.0" y="240" width="600" height="240"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDJ-Yh-2Uh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDJ-Yh-2Uh">
                                 <rect key="frame" x="0.0" y="480" width="600" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>

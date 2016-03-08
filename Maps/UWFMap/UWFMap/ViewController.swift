@@ -36,16 +36,10 @@ class ViewController: UIViewController{
 
         //TODO:request authorization YOU MUST ALSO Make changes to Info.plist file!
         self.locationManager.requestWhenInUseAuthorization()
-
-        
     }
     
     
-    
-
-    
-    
-//TODO: Finish implementation of method that will show user's current location
+   //TODO: Finish implementation of method that will show user's current location
    @IBAction func showCurrentLocation(){
     var cl2d = CLLocationCoordinate2D(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude)
     var span = MKCoordinateSpan(latitudeDelta: 0.0007872, longitudeDelta: 0.0109863)
@@ -60,7 +54,7 @@ class ViewController: UIViewController{
     
     
     @IBAction func segmentedControlChanged(sender: AnyObject) {
-        var index =  sender.selectedSegmentIndex
+        let index =  sender.selectedSegmentIndex
         if(index<self.locationsModel.locations.count){
             self.addAnnotation(self.locationsModel.locations[index])
         }
@@ -78,7 +72,7 @@ class ViewController: UIViewController{
     func addAnnotation(location:Location){
         
        //TODO:Create a MKPointAnnotation
-        var annotation: MKPointAnnotation = MKPointAnnotation()
+        let annotation: MKPointAnnotation = MKPointAnnotation()
 
         //TODO: and set it's coordinate using coordinate property 
 
@@ -100,8 +94,8 @@ class ViewController: UIViewController{
     
     
     func zoomOnLocation(location:CLLocationCoordinate2D){
-        var span = MKCoordinateSpan(latitudeDelta: 10.907872, longitudeDelta: 10.9109863)
-        var newRegion: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+        let span = MKCoordinateSpan(latitudeDelta: 10.907872, longitudeDelta: 10.9109863)
+        let newRegion: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
         self.mapView.setRegion(newRegion, animated: true)
     }
 
@@ -120,14 +114,16 @@ class ViewController: UIViewController{
     
         var mp = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseid)
 
+        
+        
         if mp == nil {
             mp = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseid)
-            mp.canShowCallout = true
-            var b: UIButton = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as UIButton
-            mp.rightCalloutAccessoryView = b
+            mp!.canShowCallout = true
+            let b: UIButton = UIButton(type: UIButtonType.DetailDisclosure) as UIButton
+            mp!.rightCalloutAccessoryView = b
             
         }
-        mp.annotation = annotation
+        mp!.annotation = annotation
         
         return mp
     }
@@ -137,13 +133,17 @@ class ViewController: UIViewController{
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
         
         var filteredArray = self.locationsModel.locations.filter( { (location: Location) -> Bool in
-            return location.title == view.annotation.title
+            if let title = view.annotation?.title{
+                return location.title == title
+            }
+            return false
+
         })
         
         if filteredArray.count > 0
         {
           //  self.performSegueWithIdentifier("showMap", sender: self)
-            var mp = self.storyboard!.instantiateViewControllerWithIdentifier("MapViewController") as MapViewController
+            let mp = self.storyboard!.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
         
             mp.location = filteredArray[0]
             self.navigationController?.pushViewController(mp, animated: true)

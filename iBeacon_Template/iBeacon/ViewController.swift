@@ -96,7 +96,7 @@ class ViewController: UIViewController {
     
     
     /*
-        Called when the new beacon is found
+        Called when a new beacon is found
     */
     func beaconsFound(udid:String?, major:Int32, minor:Int32,  proximity:CLProximity, accuracy: CLLocationAccuracy, rssi:Int){
         //design your interaction/s based on the particular iBeacon and distance to it
@@ -110,6 +110,7 @@ class ViewController: UIViewController {
         */
     }
     
+    //Called when a new regions event is detected
     func regionEvent(udid:String?, major:Int32, minor:Int32,  state:CLRegionState){
         /*
         Check if you are inside or outside region (look into implementation details)
@@ -118,7 +119,7 @@ class ViewController: UIViewController {
     
     
     
-    
+ /*Displays new content in a containerView*/
     func displayController(controller:UIViewController){
         //check if the current child controller is not the same as the one we want to add
         if self.currentChildController == controller {return}
@@ -134,7 +135,7 @@ class ViewController: UIViewController {
         
         
     }
-    
+/*Removes Content from Container View */
     func removeController(){
         
         if let controller = self.currentChildController {

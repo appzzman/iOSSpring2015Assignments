@@ -66,10 +66,6 @@ class Developer{
 }
 
 
-/*ADVANCED Max 80% or B*/
-
-
-
 
 
 
