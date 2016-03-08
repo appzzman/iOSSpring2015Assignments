@@ -31,11 +31,10 @@ class ViewController: UIViewController{
         
         //TODO: set the delegate of the map view here
 
-        //TODO: enable showing user's location
         self.mapView.showsUserLocation = true
-
-        //TODO:request authorization YOU MUST ALSO Make changes to Info.plist file!
-        self.locationManager.requestWhenInUseAuthorization()
+ 
+        //TODO:YOU MUST ALSO Make changes to Info.plist file! Refer to the slides.
+        self.locationManager.requestWhenInUseAuthorization() // Request the authorization
     }
     
     
@@ -44,11 +43,11 @@ class ViewController: UIViewController{
     var cl2d = CLLocationCoordinate2D(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude)
     var span = MKCoordinateSpan(latitudeDelta: 0.0007872, longitudeDelta: 0.0109863)
 
-    //TODO:create a instance of the region
-    var newRegion:MKCoordinateRegion// MKCoordinateRegion = MKCoordinateRegion(center: cl2d, span: span)
+    //TODO:create a instance of the region using MKCoordinateRegion(center:, span:) method
+    var newRegion:MKCoordinateRegion//
     
-    //TODO: change the displayed region of the map
-    
+    //TODO: change the displayed region of the map using map view setRegion method
+
     }
     
     
@@ -73,9 +72,12 @@ class ViewController: UIViewController{
         
        //TODO:Create a MKPointAnnotation
         let annotation: MKPointAnnotation = MKPointAnnotation()
+        
+        let cl2d = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
 
         //TODO: and set it's coordinate using coordinate property 
-
+       // annotation.coordinate = location.
+        annotation.coordinate = cl2d
         
         self.zoomOnLocation(annotation.coordinate)
         annotation.title = location.title
@@ -92,7 +94,7 @@ class ViewController: UIViewController{
     
     
     
-    
+    /* Changes visible region of the map */
     func zoomOnLocation(location:CLLocationCoordinate2D){
         let span = MKCoordinateSpan(latitudeDelta: 10.907872, longitudeDelta: 10.9109863)
         let newRegion: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)

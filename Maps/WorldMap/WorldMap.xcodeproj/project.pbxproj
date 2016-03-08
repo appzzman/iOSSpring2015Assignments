@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		407361171A9BD85F00700E6B /* UWFMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWFMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		407361171A9BD85F00700E6B /* WorldMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4073611B1A9BD85F00700E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4073611C1A9BD85F00700E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4073611F1A9BD85F00700E6B /* UWFMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWFMap.xcdatamodel; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		407361181A9BD85F00700E6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				407361171A9BD85F00700E6B /* UWFMap.app */,
+				407361171A9BD85F00700E6B /* WorldMap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		407361161A9BD85F00700E6B /* UWFMap */ = {
+		407361161A9BD85F00700E6B /* WorldMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMap" */;
+			buildConfigurationList = 407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "WorldMap" */;
 			buildPhases = (
 				407361131A9BD85F00700E6B /* Sources */,
 				407361141A9BD85F00700E6B /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = UWFMap;
+			name = WorldMap;
 			productName = UWFMap;
-			productReference = 407361171A9BD85F00700E6B /* UWFMap.app */;
+			productReference = 407361171A9BD85F00700E6B /* WorldMap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 407361121A9BD85F00700E6B /* Build configuration list for PBXProject "UWFMap" */;
+			buildConfigurationList = 407361121A9BD85F00700E6B /* Build configuration list for PBXProject "WorldMap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				407361161A9BD85F00700E6B /* UWFMap */,
+				407361161A9BD85F00700E6B /* WorldMap */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +323,7 @@
 				INFOPLIST_FILE = UWFMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uwf.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WorldMap;
 			};
 			name = Debug;
 		};
@@ -334,14 +334,14 @@
 				INFOPLIST_FILE = UWFMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uwf.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WorldMap;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		407361121A9BD85F00700E6B /* Build configuration list for PBXProject "UWFMap" */ = {
+		407361121A9BD85F00700E6B /* Build configuration list for PBXProject "WorldMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				407361371A9BD85F00700E6B /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "UWFMap" */ = {
+		407361391A9BD85F00700E6B /* Build configuration list for PBXNativeTarget "WorldMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4073613A1A9BD85F00700E6B /* Debug */,
